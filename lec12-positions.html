@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec12 - Positions</title>
+    <style>
+        .container {
+            width: 550px;
+            height: 550px;
+            padding: 12px;
+            border: 2px solid black;
+        }
+
+        .container img {
+            margin: 15px;
+            border-radius: 8px;
+            border: 2px solid teal;
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            border: 2px solid blue;
+        }
+
+        .static {
+            top: 20px;
+            left: 40px;
+        }
+
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 40px;
+        }
+
+        .relativeParent {
+            position: relative;
+            height: 250px;
+            width: 350px;
+            border: 2px solid black;
+
+        }
+
+        .absolute {
+            position: absolute;
+            top: 40px;
+            left: 50px;
+        }
+
+        button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h2>WITHOUT FLOAT</h2>
+    <div style="width: 120px; border: 2px solid teal;">
+        Box A
+    </div>
+    <p>Yeh paragraph next line m chala jayega.!</p>
+
+    <h2>WITH FLOAT</h2>
+    <div style="width: 120px; border: 2px solid teal; float: left;">
+        Box B
+    </div>
+    <p>Yeh paragraph same line m aayega.</p>
+
+
+    <h1>POSITION STICKY</h1>
+    <div class="box sticky">
+        Sticky Box
+    </div>
+    <br><br><br>
+    
+    <div class="container">
+        <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif; margin-bottom: 0;">Aptech Article</h2>
+        <p style="text-align: center; font-family: Arial, Helvetica, sans-serif; color: rgb(95, 95, 95); margin: 0;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <img src="images/img2.jpg" alt="Student Img" style="float: left;">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dicta officiis, numquam amet tempore illum
+            facilis, magni at voluptatibus veritatis laborum ipsum qui a illo alias quibusdam veniam repellat ab. Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Facere consequatur et omnis, accusantium commodi autem
+            ex, quasi asperiores inventore hic quod recusandae rerum iusto alias dicta animi cumque possimus culpa!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A sed, perferendis officiis perspiciatis rerum
+            nostrum fugit sapiente eligendi! Ducimus mollitia quae illo aliquid hic consequatur velit harum voluptatem
+            facilis nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iusto iure animi delectus
+            fugit aliquam sint accusamus repellendus corrupti ea molestias similique eveniet explicabo, sed iste
+            voluptates. Odio, harum asperiores.
+        </p>
+    </div>
+
+    <h1>Static Position</h3>
+    <div class="box static">
+        STATIC BOX
+    </div>
+
+    <h1>Position Relative</h3>
+    <div class="box relative" style="float: left;">
+        Relative Box
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquid odit minima nemo dicta nostrum id pariatur
+        cupiditate hic eum, obcaecati illum. Culpa hic tempore accusantium omnis pariatur ut facere!
+    </p>
+
+    <br><br><br><br><br>
+
+    <h1>Position Absolute</h3>
+    <div class="relativeParent">
+        <h2>HELLO WORLD HELLO WORLD</h2>
+        <h2>HELLO WORLD HELLO WORLD</h2>
+        <h2>HELLO WORLD HELLO WORLD</h2>
+        <div class="box absolute" style="float: left;">
+            Absolute Box
+        </div>
+    </div>
+
+    <button>CONTACT</button>
+
+</body>
+
+</html>
