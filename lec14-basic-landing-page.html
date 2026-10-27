@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(223, 223, 223);
+            padding: 16px;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 8px;
+        }
+
+        .btn button {
+            padding: 12px;
+            background-color: darkorange;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .btn button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .container {
+            min-height: 87vh;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .container .side-a {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container .side-b img {
+            border-radius: 10px;
+            height: 250px;
+            width: 100%;
+            border: 2px solid teal;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+
+            background-color: rgb(223, 223, 223);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            Logo
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="btn">
+            <button>Register</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="side-a">
+
+            <h2>HELLO</h2>
+            <p>We Are Building</p>
+            <p>Softwares and Solutions</p>
+        </div>
+        <div class="side-b">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtaJb6kjSfNO1oifZ7KOI9459mwRBlSk_5Shv1ylDUqw&s"
+                alt="Image">
+        </div>
+    </div>
+
+    <footer>&copy; Aptech 2026. All rights reserved</footer>
+</body>
+
+</html>
